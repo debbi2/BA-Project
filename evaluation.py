@@ -11,7 +11,7 @@ import time, code
 from models_vgg import vggNet16, vggNet19
 from models_alexnet import CNN
 from data_process import Brain_data
-from sklearn.metrics import classification_report, confusion_matrix, plot_confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix
 
 
 def performance_report(model_name, class_names):

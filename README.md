@@ -30,8 +30,9 @@ We have created three models using pre-trained model of AlexNet, VGG16, and VGG1
 A heatmap is created by getting the dot product of a feature map of the final convolutional layer and weights of GAP layer. The heatmap indicates a discriminative region for a class of interest. It is then binarized at a threshold of 95th percentile to create a segmentation mask image.
 
 ![result image1](result1.jpg)
-![result image2](result2.jpg)
 
 ## IoU
 Segmentation mask images of the test set (i.e. “dataset4.csv”) is compared with the ground truth mask images for tumors using IoU. The mean IoU (mIoU) of 0.153 is obtained. This indicates there are only 15.3 %  similarity of the mask and the ground truth images.
 Even though the classification model can well distinguish brain tumors with the accuracy of 0.98, the model cannot detect a tumor precisely in its exact shape and size, and sometimes detect wrong area (i.e. corners of the image) as a tumor.
+
+![result image2](result2.jpg)

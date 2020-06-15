@@ -1,4 +1,4 @@
-import os, glob, code
+import os, glob
 import PIL
 import matplotlib.pyplot as plt
 import torch
